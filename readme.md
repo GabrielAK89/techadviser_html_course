@@ -1,6 +1,7 @@
 # Project
 
-This is my first project, made from scratch
+Convert HTML course from PDF to web version.
+
 
 ## Language
 

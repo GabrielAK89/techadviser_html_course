@@ -25,8 +25,72 @@
         </nav>
 
         <aside>
-            <h1>Side Bar</h1>
+            <div class="sidenav">
+                <button class="dropdown-btn">Chapter 1: Basics HTML5
+                </button>
+                <div class="dropdown-container">
+                    <a href="../chapters/Chapter1_requirements.html">Requirements</a>
+                    <a href="../chapters/Chapter1_introduction.html">Introduction to HTML</a>
+                    <a href="#">HTML Elements</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 2 The Basics of CSS
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">CSS Inheritance</a>
+                    <a href="#">CSS Multiple Classes</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 3 HTML5
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Main HTML5 Specific Elements</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 4 Review CSS and passing to CSS 3
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Main CSS3.0 Specific Properties</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 5 Get your Bootstrap Project Started
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">The Project files</a>
+                    <a href="#">Downloading the Bootstrap Files</a>
+                    <a href="#">Building faster with the Bootstraplibrary</a>
+                    <a href="#">Webpage layout powered by the grid system</a>
+                    <a href="#">Javascript plugins made easy!</a>
+                    <a href="#">Leveraging Bootstrap</a>
+                    <a href="#">Mobile First</a>
+                    <a href="#">Bonuses</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 6 Final Conclusion
+                </button>
+                <div class="dropdown-container">
+                </div>
+            </div>
         </aside>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
 
         <article class="contact">
             <!-- <img src="http://placehold.it/300x200" alt="PlaceHolder image"> -->
@@ -54,6 +118,7 @@
 
                         <label for="country">Country of origin</label>
                         <select>
+                            <option value="RO">Romania</option>
                             <option value="AF">Afghanistan</option>
                             <option value="AX">Åland Islands</option>
                             <option value="AL">Albania</option>
@@ -235,7 +300,6 @@
                             <option value="PR">Puerto Rico</option>
                             <option value="QA">Qatar</option>
                             <option value="RE">Réunion</option>
-                            <option value="RO">Romania</option>
                             <option value="RU">Russian Federation</option>
                             <option value="RW">Rwanda</option>
                             <option value="BL">Saint Barthélemy</option>

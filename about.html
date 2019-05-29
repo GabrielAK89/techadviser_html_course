@@ -1,92 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-                <meta content="ie=edge" http-equiv="X-UA-Compatible">
-                    <link href="css/style.css" rel="stylesheet">
-                        <script src="js/scripts.js">
-                        </script>
-                        <title>
-                            About us
-                        </title>
-                    </link>
-                </meta>
-            </meta>
-        </meta>
-    </head>
-    <body id="about-page">
-        <div class="container">
-            <header class="header">
-                <a class="link-title" href="index.html">
-                    Minimalistic Website
-                </a>
-                <!-- <a href="contact.html">Contact</a> -->
-            </header>
-            <nav class="menu">
-                <a href="index.html">
-                    Home
-                </a>
-                <a href="about.html">
-                    About us
-                </a>
-                <a href="contact.html">
-                    Contact
-                </a>
-            </nav>
-            <aside>
-                <h1>
-                    Side Bar
-                </h1>
-            </aside>
-            <article class="main">
-                <div id="home-image">
-                    <img alt="About us picture" src="images/about-us.png">
-                    </img>
-                </div>
-                <div id="profile-info">
-                    <h2>
-                        Gabriel Acatrinei
-                    </h2>
-                    <h2>
-                        Web Developer
-                    </h2>
-                    <h2>
-                        Age: 29
-                    </h2>
-                </div>
-                <div class="description">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, eligendi quis ipsam cumque culpa
-                    consequuntur, sed voluptates error totam voluptate praesentium quo. Adipisci, hic mollitia. Ut
-                    laborum
-                    alias voluptatem unde!
-                    </p>
-                    <p>
-                        Vel, fuga. Deserunt, sapiente natus expedita ad culpa assumenda nostrum vel placeat dolores sed
-                    maxime,
-                    sit corporis pariatur suscipit eos molestias magnam, ab delectus consequatur quisquam? Iusto fugit
-                    iste
-                    necessitatibus.
-                    </p>
-                    <p>
-                        Consectetur fugiat, quae, sed voluptate impedit corrupti commodi laudantium non repudiandae facilis
-                    beatae unde totam culpa ratione sapiente, delectus blanditiis eaque optio fuga quaerat deserunt ipsa
-                    molestiae minima. Ducimus, repellendus.
-                    </p>
-                </div>
-            </article>
-            <footer>
-                © 2019 Minimalist Website
-                <span class="separator">
-                    |
-                </span>
-                Design by
-                <a href="https://gabrielak89.github.io/Minimalist_Website/">
-                    Gabriel Acatrinei
-                </a>
-            </footer>
-        </div>
-    </body>
-</html>
 
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/scripts.js">
+    </script>
+    <title>
+        About us
+    </title>
+    </link>
+    </meta>
+    </meta>
+    </meta>
+</head>
+
+<body id="about-page">
+    <div class="container">
+        <header class="header">
+            <a class="link-title" href="index.html">
+                Minimalistic Website
+            </a>
+            <!-- <a href="contact.html">Contact</a> -->
+        </header>
+        <nav class="menu">
+            <a href="index.html">
+                Home
+            </a>
+            <a href="about.html">
+                About us
+            </a>
+            <a href="contact.html">
+                Contact
+            </a>
+        </nav>
+        <aside>
+            <div class="sidenav">
+                <button class="dropdown-btn">Chapter 1: Basics HTML5
+                </button>
+                <div class="dropdown-container">
+                    <a href="../chapters/Chapter1_requirements.html">Requirements</a>
+                    <a href="../chapters/Chapter1_introduction.html">Introduction to HTML</a>
+                    <a href="#">HTML Elements</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 2 The Basics of CSS
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">CSS Inheritance</a>
+                    <a href="#">CSS Multiple Classes</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 3 HTML5
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Main HTML5 Specific Elements</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 4 Review CSS and passing to CSS 3
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Main CSS3.0 Specific Properties</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 5 Get your Bootstrap Project Started
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">The Project files</a>
+                    <a href="#">Downloading the Bootstrap Files</a>
+                    <a href="#">Building faster with the Bootstraplibrary</a>
+                    <a href="#">Webpage layout powered by the grid system</a>
+                    <a href="#">Javascript plugins made easy!</a>
+                    <a href="#">Leveraging Bootstrap</a>
+                    <a href="#">Mobile First</a>
+                    <a href="#">Bonuses</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 6 Final Conclusion
+                </button>
+                <div class="dropdown-container">
+                </div>
+            </div>
+        </aside>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+        <article class="main">
+            <div id="home-image">
+                <img alt="About us picture" src="images/about-us.png">
+                </img>
+            </div>
+            <div id="profile-info">
+                <h2>
+                    Gabriel Acatrinei
+                </h2>
+                <h2>
+                    Web Developer
+                </h2>
+                <h2>
+                    Age: 29
+                </h2>
+            </div>
+            <div class="description">
+                <p>
+                    TechAdviser a debutat în 2010 ca un proiect educațional coordonat de o echipă de 3 instructori avănd în portofoliul doar cursurile CCNA. Astâzi academia are 9 instructori specialiști, oferă o gamă extinsă de cursuri tehnice și anual peste 300 de cursanți folosesc baza pregătirii noastre pentru a-și forma o carieră profesională în domeniul IT.
+                </p>
+            </div>
+        </article>
+        <footer>
+            © 2019 Minimalist Website
+            <span class="separator">
+                |
+            </span>
+            Design by
+            <a href="https://gabrielak89.github.io/Minimalist_Website/">
+                Gabriel Acatrinei
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
