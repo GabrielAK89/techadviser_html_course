@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Web Design Course</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="link-title" href="index.html">Web Design Course</a>
+        </header>
+
+        <nav class="menu">
+            <a href="../index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="../about.html">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <aside>
+            <div class="sidenav">
+                <button class="dropdown-btn">Chapter 1: Basics HTML5
+                </button>
+                <div class="dropdown-container">
+                    <a href="../chapters/Chapter1_requirements.html">Requirements</a>
+                    <a href="../chapters/Chapter1_introduction.html">Introduction to HTML</a>
+                    <a href="#">HTML Elements</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 2 The Basics of CSS
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">CSS Inheritance</a>
+                    <a href="#">CSS Multiple Classes</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 3 HTML5
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Main HTML5 Specific Elements</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 4 Review CSS and passing to CSS 3
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Main CSS3.0 Specific Properties</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 5 Get your Bootstrap Project Started
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">The Project files</a>
+                    <a href="#">Downloading the Bootstrap Files</a>
+                    <a href="#">Building faster with the Bootstraplibrary</a>
+                    <a href="#">Webpage layout powered by the grid system</a>
+                    <a href="#">Javascript plugins made easy!</a>
+                    <a href="#">Leveraging Bootstrap</a>
+                    <a href="#">Mobile First</a>
+                    <a href="#">Bonuses</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 6 Final Conclusion
+                </button>
+                <div class="dropdown-container">
+                </div>
+            </div>
+        </aside>
+
+        <article class="main">
+            <h4 class="right-side">
+                Estimated time of completion: 8 hours - 10 hours</h4>
+            <h4 class="right-side">You’ll need a web browser and a text editor to exercise!</h4>
+
+            <div id="chapter1">
+                <img src="https://images.yourstory.com/production/document_image/mystoryimage/e67sv338-html-css.jpg?fm=png&auto=format"
+                    alt="html and css" style="width: 80%">
+            </div>
+            <div>
+                <h1>2. Introduction to HTML</h1>
+
+                <h2>Definition of HTML</h2>
+
+                <p>HTML stands for Hyper Text Mark-up Language. HTML is the basis for all things Web and is a
+                    necessary skill for any Web Developer. Almost every website is comprised of HTML whether that is a
+                    variation of HTML or plain old HTML.</p>
+
+                <h2>Structure </h2>
+
+                <p>Let's start with a basic HTML5 structure: </p>
+
+                <p>The first thing we should do is set up the skeleton of the page.</p>
+                <p>
+                    a. Always put<span> &lt;!DOCTYPE html&gt; </span>on the first line.
+                    This tells the browser what language it's reading (in
+                    this case, HTML).
+                </p>
+                <p>b. Always put<span> &lt;html&gt; </span>on the next line. This starts
+                    the HTML document.</p>
+                <p>c. Always put<span> &lt;/html&gt; </span>on the last line. This ends
+                    the HTML document.</p>
+
+                <img src="../images/html_chapter_1.JPG" alt="html chapter 1 image" style="padding: 0 60px">
+
+
+                <p style="text-indent: 0">
+                    Already you have seen we use<span> &lt;&gt;</span> a lot. <br>
+                    Things inside <span>&lt; &gt;</span> are called tags.<br>
+                    Tags nearly always come in pairs: an opening tag and a closing tag.<br>
+                    Example of opening tag: <span> &lt;html&gt; </span><br>
+                    Example of closing tag: <span> &lt;/html&gt; </span><br>
+                </p>
+
+
+                You can think of tags as being like parentheses: whenever you open one, you should close it.
+                Tags also nest, so you should close them in the right order: the most recently opened tag should be
+                the first one closed, like in the example below. <br>
+                <p><span>&lt;first tag&gt;&lt;second tag&gt;Some text!&lt;/second tag&gt;&lt;/first tag&gt;</span></p>
+            </div>
+
+            <div>
+                <div style="border: 1px solid red">
+                    <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Exercise one:
+                    </button>
+                    <div class="dropdown-container">
+                        <ol>
+                            <li>Type out the above code into a new text file.</li>
+                            <li>Save the file with an .html extension (i.e. structure.html).</li>
+                            <li>Open the html file with your Browser.</li>
+                            <li>What do you see?</li>
+                        </ol>
+                        <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Result:
+                        </button>
+                        <div class="dropdown-container">
+                            <p class="result">
+                                No Output? The Browser didn't seem to show us any content did it? <br>
+                                The browser would not show us any content (output), as we have not yet told the html
+                                document to
+                                output anything to the browser. All we have told the browser is that we have an HTML
+                                document.
+                            </p>
+                        </div>
+                    </div>
+                </div><br><br><br>
+                <div>
+                    <h1>Validation</h1>
+                    <p>
+                        Even though all we have created is a HTML structure and we are not seeing any results (yet), the
+                        HTML document we have should validate with W3C's online HTML validation tool.
+                    </p>
+                    <p>
+                        W3C is the World Wide Web Consortium- they set the standards for HTML (and many other Web Based
+                        Languages) to provide a similar cross-browser experience; meaning that web browsers will be more
+                        inclined to output (or render) data in a similar fashion.
+                    </p>
+                </div>
+                <div style="border: 1px solid red">
+                    <div>
+                        <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Exercise two:
+                        </button>
+                        <div class="dropdown-container">
+                            <ol>
+                                <li>Go to W3C's online HTML validation tool</li>
+                                <li>Select the third tab along- "Validate by Direct Input"</li>
+                                <li>Copy and paste your HTML5 document code into the window and click 'Check'.</li>
+                                <li>Notice how the document passed validation with three warnings.</li>
+                            </ol>
+                            <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Let's fix
+                                these
+                                warnings
+                            </button>
+                            <div class="dropdown-container">
+                                <o class="result">
+
+                                    <ol>
+                                        <li>
+                                            The warning- "Using Experimental Feature- HTML5 Conformance Checker" is
+                                            basically
+                                            telling us that all major browsers do not officially support HTML5 yet.
+                                        </li>
+                                        <li>
+                                            The next warning- 'No character encoding declared at document level'- this
+                                            is
+                                            because
+                                            we haven’t declared our character encoding within the HTML structure.
+                                        </li>
+                                        <li>
+                                            The final warning is telling us that no matter what our character encoding
+                                            is
+                                            set to
+                                            within our HTML document that we are validating, it is going to assume and
+                                            treat
+                                            is as
+                                            UTF-8. The logical way to overcome this last warning is to use the file
+                                            upload
+                                            tool,
+                                            rather than the Direct Input.
+                                        </li><br><br>
+                                        Now, let’s try and use the W3C validation tool to upload our HTML document, by
+                                        selecting
+                                        the second tab on the W3C's online HTML validation tool page and uploading our
+                                        HTML
+                                        document.
+                                    </ol>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1>More Warnings</h1>
+                    <p>
+                        If you notice we still have our 'Using Experimental Feature- HTML conformance checker'
+                        warning
+                        (which is perfectly fine, as we are using HTML5 and it is not yet fully supported by all
+                        browsers), the other 2 warnings are related to our character encoding and so is the Error we
+                        are
+                        now seeing.
+                    </p>
+                    <p>
+                        Let’s fix this, by declaring our Character Set. We will be using the UTF-8 Character
+                        encoding
+                        and we can do this by adding some simple mark-up to our head section.
+                    </p>
+                </div>
+            </div>
+
+
+        </article>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+
+        <footer>
+            &copy; 2019 Minimalist Website &nbsp;
+            <span class="separator">|</span> Design by
+            <a href="https://gabrielak89.github.io/Minimalist_Website/">Gabriel Acatrinei</a>
+        </footer>
+    </div>
+</body>
+
+</html>

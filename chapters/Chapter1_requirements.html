@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Web Design Course</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="link-title" href="index.html">Web Design Course</a>
+        </header>
+
+        <nav class="menu">
+            <a href="../index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="../about.html">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="../contact.html">Contact</a>
+        </nav>
+
+        <aside>
+            <div class="sidenav">
+                <button class="dropdown-btn">Chapter 1: Basics HTML5
+                </button>
+                <div class="dropdown-container">
+                    <a href="../chapters/Chapter1_requirements.html">Requirements</a>
+                    <a href="../chapters/Chapter1_introduction.html">Introduction to HTML</a>
+                    <a href="#">HTML Elements</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 2 The Basics of CSS
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">CSS Inheritance</a>
+                    <a href="#">CSS Multiple Classes</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 3 HTML5
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Main HTML5 Specific Elements</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 4 Review CSS and passing to CSS 3
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Main CSS3.0 Specific Properties</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 5 Get your Bootstrap Project Started
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">The Project files</a>
+                    <a href="#">Downloading the Bootstrap Files</a>
+                    <a href="#">Building faster with the Bootstraplibrary</a>
+                    <a href="#">Webpage layout powered by the grid system</a>
+                    <a href="#">Javascript plugins made easy!</a>
+                    <a href="#">Leveraging Bootstrap</a>
+                    <a href="#">Mobile First</a>
+                    <a href="#">Bonuses</a>
+                </div>
+
+                <button class="dropdown-btn">Chapter 6 Final Conclusion
+                </button>
+                <div class="dropdown-container">
+                </div>
+            </div>
+        </aside>
+
+        <article class="main">
+            <h4 class="right-side">
+                Estimated time of completion: 8 hours - 10 hours</h4>
+            <h4 class="right-side">You’ll need a web browser and a text editor to exercise!</h4>
+
+            <div id="chapter1">
+                <img src="https://images.yourstory.com/production/document_image/mystoryimage/e67sv338-html-css.jpg?fm=png&auto=format"
+                    alt="html and css" style="width: 80%">
+            </div>
+
+            <h1>1. Requirements</h1>
+
+            <h2>What do I need to start developing with HTML?</h2>
+
+            <div>
+                There are absolutely no requirements to start learning HTML, but you will need some tools to help you
+                along the way. There are two tools that are essential to becoming an efficient and professional Web
+                Developer.
+            </div>
+            <br>
+            <p>
+                Firstly, you will need a Text Editor. Windows users, you can get an awesome text editor from
+                notepadplusplus.org. As you have probably guessed from the name of the URL, this text editor is Notepad
+                ++
+                and includes some cool syntax highlighting! Mac fans, you can get a text editor from Bare Bones. This
+                handy text editor-Text wrangler also supports syntax highlighting for a range of programming
+                languages. Personally I use Text Wrangler. Linux lovers, you can use the default gnome text editorgedit.
+                If it’s not already installed, you can get it over here at gnome.org.
+            </p>
+            <br>
+
+            <h2>Do I need syntax highlighting? What is syntax highlighting?</h2>
+
+            <p>
+                Syntax highlighting allows you to easily see certain elements of your code in a designated color. For
+                example, when using a WYSIWYG (what you see is what you get) editor with syntax highlighting
+                some editors may render the HTML structure as blue, comments as grey and attributes and values as
+                different colors. This allows you to easily distinguish between the sections of code, elements and
+                comments.
+            </p>
+            <p>
+                Secondly, you will need a browser to render your code. I recommend Firefox. We will download and
+                install Mozilla's Firefox (Cross-platform) Browser and the Firebug add-on for Firefox. The Firebug
+                add-on will be your new best friend as a learned web developer. The Fire-bug Firefox add-on provides
+                the ability to closely "inspect" the elements of an HTML document and see what’s going on behind the
+                scenest his will play a big part in your web development career!
+                Alternatively you can use any other browser that supports HTML5- including Safari, Google’s Chrome
+                and Opera.
+            </p>
+        </article>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+        <footer>
+            &copy; 2019 Minimalist Website &nbsp;
+            <span class="separator">|</span> Design by
+            <a href="https://gabrielak89.github.io/Minimalist_Website/">Gabriel Acatrinei</a>
+        </footer>
+    </div>
+</body>
+
+</html>
