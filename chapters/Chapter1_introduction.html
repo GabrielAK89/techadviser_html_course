@@ -103,7 +103,7 @@
                 <p>c. Always put<span> &lt;/html&gt; </span>on the last line. This ends
                     the HTML document.</p>
 
-                <img src="../images/html_chapter_1.JPG" alt="html chapter 1 image" style="padding: 0 60px">
+                <img class="images" src="../images/html_chapter_1.JPG" alt="html chapter 1 image">
 
 
                 <p style="text-indent: 0">
@@ -224,9 +224,111 @@
                         encoding
                         and we can do this by adding some simple mark-up to our head section.
                     </p>
+                    <img class="images" src="../images/html_chapter_1.2.JPG" alt="html head">
+                    <p> We have just added our first HTML Meta tag! </p>
+                    <p>This Meta tag lets the browser know that we are using UTF-8 character encoding. UTF-8 is the most
+                        commonly used character encoding, basically it provides a standard format (encoding) for text
+                        (code) that will assist against the problems of endianness, which could result in incorrect or
+                        invalid characters displaying.
+                    </p>
+
+                    <p>Tags inside the head element of a HTML document are often used to tell the browser information
+                        about the HTML document that we don't need to output as part of our content, such as our HTML
+                        title and character encoding.</p>
+                    <p>
+                        In every programming language comments are widely used to help remind other developers what is
+                        happening in the code, to make note of extra code that will be added to the web application at a
+                        later date and notes to others who may be working on the same project.
+                        In HTML, comments are easily added to the document, by adding the opening and closing comment
+                        tags.
+                    </p>
+                    <img class="images" src="../images/html_chapter_1.3.JPG" alt="comment text">
+                    <p>Our browser will not render anything placed inside the comment tag.</p><br><br>
+                    <h2>Example of Comments</h2>
+                    <img class="images" src="../images/html_chapter_1.4.JPG" alt="comment examples">
                 </div>
             </div>
+            <br><br>
+            <div>
+                <h1>HTML5 Structure revisited</h1>
+                <p>Let’s go through our HTML document and talk about the structure step-by-step, using comments.</p>
+                <img class="images" src="../images/html_chapter_1.5.JPG" alt="html structure">
 
+                <br><br><br><br>
+
+                <div style="border: 1px solid red">
+                    <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Exercise three (Part
+                        1):
+                    </button>
+                    <div class="dropdown-container">
+                        <ol>
+                            <li>Type the above code into a new file.</li>
+                            <li>Save the file with an .html extension (i.e. template.html).</li>
+                            <li>Open the html file with your Browser.</li>
+                            <li>What do you see?</li>
+                        </ol>
+                        <p>Nothing has been output by the Browser, as we have used comments to explain the structure and
+                            have not yet added any “real” content.</p>
+                    </div>
+                </div><br>
+                <br>
+                <br>
+                <div style="border: 1px solid red">
+                    <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Exercise three
+                        (Part 2): </button>
+                    <div class="dropdown-container">
+                        <ol>
+                            <li>Open up the Fire-bug Firefox add-on. You can do this by right clicking on the
+                                Firefox Browser window and selecting “Inspect Element with Fire Bug”.</li>
+                            <li>Notice how we can see exactly what we have typed into our HTML document on the
+                                left-hand side of the Firebug window.</li>
+                        </ol>
+                        <p>Nothing has been output by the Browser, as we have used comments to explain the structure
+                            and have not yet added any “real” content.</p>
+                    </div>
+                </div>
+                <p>So how can we tell the browser to <span
+                        style="text-decoration: underline; font-style: italic;">output some data</span>?</p>
+                <p>It's actually quite simple. But before we add any content to the document, let's talk about the title
+                    tag. The title tag allows us to specify the name of the website- more specifically, the web page. It
+                    is good practice to be as relevant as you can when giving your web page a title. As you can see in
+                    the previous examples, the title tag is inserted into the head section of the HTML document.</p>
+                <img src="../images/html_chapter_1.6.JPG" alt="title tag" class="images">
+                <p>If we load up this HTML document in our Browser now, we won’t see any changes to the webpage. But,
+                    have a look at the top of your browser window or current tab- this is where the Title of your HTML
+                    document is shown.</p>
+
+                <h1>Adding Content</h1>
+                <p>We can add our content in-between our body tags like so:</p>
+                <img src="../images/html_chapter_1.7.JPG" alt="Hello World in HTML" class="images">
+                <div style="border: 1px solid red">
+                    <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Exercise four:
+                        (Part 2): </button>
+                    <div class="dropdown-container">
+                        <ol>
+                            <li>Type the above code into a new file with your text editor.</li>
+                            <li>Save the file with an .html extension (i.e. hello_world.html)</li>
+                            <li>Open the html file with your Browser and see what the browser is rendering.</li>
+                            <li>Remove the “Hello World” text and replace it with a sentence about your favourite season
+                                and start to get comfortable with coding in HTML.</li>
+                            <li>Make sure you view your html document in your browser and validate it.</li>
+                        </ol>
+                    </div>
+                </div>
+                <h1>HTML Notes:</h1>
+                <p>All versions of HTML require the basic HTML structure, but the version of HTML depicts a vast
+                    difference in the required elements and doc type declarations. HTML4.01, XHTML and HTML5.</p>
+                <ul>
+                    <li>Notice how every tag is closed in order of which they were opened? This is a very important
+                        element to valid HTML.</li>
+                    <li>HTML5 is not currently supported by all major browsers, but provides plenty of extra
+                        features for us to work with and stay ahead of the curve. Although all major browsers do not
+                        support HTML5, Google's Chrome, Opera and FireFox are currently the most useful tools for
+                        Modern Web Development.</li>
+                    <li>If you are not seeing this "Inspect Element with Fire-bug" option in the dropdown menu, when
+                        you right 'click' on your browsers main area- Take a look at this helpful documentation at
+                        mozillaZine.</li>
+                </ul>
 
         </article>
 
