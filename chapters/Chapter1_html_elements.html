@@ -84,32 +84,113 @@
 
                 <h2>The Paragraph tag</h2>
 
-                <p>In HTML, the paragraph tag is part of the block level elements group. Block level elements will generally start on a new line and any Mark-up under or after the block level element will also start on a new line. Here is an example of a paragraph tag in HTML, followed by some text after the ending paragraph tag. Even though all of the text is on one line, the paragraph tag (block level element) will place the text after the closing paragraph tag on a new line.</p>
-
-            <div>
-                <div style="border: 1px solid red">
-                    <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Exercise one:
-                    </button>
-                    <div class="dropdown-container">
-                        <ol>
-                            <li>Type out the above code into a new text file.</li>
-                            <li>Save the file with an .html extension (i.e. structure.html).</li>
-                            <li>Open the html file with your Browser.</li>
-                            <li>What do you see?</li>
-                        </ol>
-                        <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Result:
+                <p>In HTML, the paragraph tag is part of the block level elements group. Block level elements will
+                    generally start on a new line and any Mark-up under or after the block level element will also start
+                    on a new line. Here is an example of a paragraph tag in HTML, followed by some text after the ending
+                    paragraph tag. Even though all of the text is on one line, the paragraph tag (block level element)
+                    will place the text after the closing paragraph tag on a new line.</p>
+                <div>
+                    <img class="images" src="../images/html_chapter_1.8.JPG" alt="HTML block level elements">
+                    <br><br><br>
+                    <div style="border: 1px solid red">
+                        <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Exercise one:
                         </button>
                         <div class="dropdown-container">
-                            <p class="result">
-                                No Output? The Browser didn't seem to show us any content did it? <br>
-                                The browser would not show us any content (output), as we have not yet told the html
-                                document to
-                                output anything to the browser. All we have told the browser is that we have an HTML
-                                document.
-                            </p>
+                            <ol>
+                                <li>Type out the above code into a new text file.</li>
+                                <li>Save the file with an .html extension (i.e. structure.html).</li>
+                                <li>Open the html file with your Browser.</li>
+                                <li>What do you see?</li>
+                            </ol>
+                            <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Output:
+                            </button>
+                            <div class="dropdown-container">
+                                <img class="images" src="../images/html_chapter_1.9.JPG" alt="I am a paragraph">
+                            </div>
                         </div>
                     </div>
-                </div><br><br><br>
+                </div><br>
+                <div>
+                    <h2>Other Block Level Elements</h2>
+                    <p>There are a variety of other block level elements available in HTML; including Headings, logical
+                        (or document) divisions, horizontal rules, ordered lists and unordered lists.</p>
+                    <p>Now let's learn how to make ordered lists. An ordered list is simply a list that is numbered,
+                        like the one below.
+                        <br><br>
+                        On line 13, we begin the ordered list with the opening tag &lt;ol&gt;.
+                        <br>
+                        On lines 14 – 16, we wrap (i.e. surround) each individual item with &lt;li&gt; and &lt;/li&gt;
+                        tags.
+                        <br>
+                        Because each listed item is only on one line, we put the entire element on one line.
+                        <br>
+                        On line 17, we finish the ordered list with the closing tag &lt;/ol&gt;.
+                    </p>
+
+                    <p>
+                        How cool is this? We can now add ordered lists to headings and paragraphs as things we can use
+                        in our HTML body.
+                        <br><br>
+                        We just learned how to make ordered lists, but what if the order doesn't matter, what if we just
+                        want bullet points?
+                        <br>
+                        On line 18, we open our list with an unordered list &lt;/ul&gt; tag.
+                        <br><br>
+                        For each item we wish to add to the list, we use a list item tag &lt;li&gt; with text in
+                        between.<br>
+                        On line 22, we then tell the browser we are done with our list by calling our closing
+                        &lt;/ul&gt; tag.
+                    </p>
+                    <img class="images" src="../images/html_chapter_1.10.JPG" alt="">
+                    <br><br>
+                    <div style="border: 1px solid red">
+                        <button class="dropdown-btn exercise" style="font-size: 20px; color: burlywood">Output:
+                        </button>
+                        <div class="dropdown-container">
+                            <img class="images" src="../images/html_chapter_1.11.JPG" alt="I am a paragraph">
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <h1>Description</h1>
+                    <h2>Type</H2>
+                    <div>
+                        <p>
+                            type="1"
+                            The list items will be numbered with numbers (default)
+                        </p>
+                        <p>
+                            type="A"
+                            The list items will be numbered with uppercase letters
+                        </p>
+                        <p>
+                            type="a"
+                            The list items will be numbered with lowercase letters
+                        </p>
+                        <p>
+                            type="I"
+                            The list items will be numbered with uppercase roman numbers
+                        </p>
+                        <p>
+                            type="i"
+                            The list items will be numbered with lowercase roman numbers
+                        </p>
+                    </div>
+
+                    <div style="font-style: italic;">
+                        <h2>Numbers:</h2>
+                        &lt;ol type="1"&gt; <br>
+                        &nbsp; &nbsp; &lt;li&gt; Coffee&lt;/li&gt; <br>
+                        &nbsp;&nbsp; &lt;li&gt; Tea&lt;/li&gt; <br>
+                        &nbsp;&nbsp; &lt;li&gt; Milk&lt;/li&gt; <br>
+                        &lt;/ol&gt; <br>
+
+                        <h2>Uppercase Letters:</h2>
+                        &lt;ol type="A"&gt;
+                        &lt;li&gt; Coffee&lt;/li&gt;
+                    </div>
+                </div>
 
         </article>
 
