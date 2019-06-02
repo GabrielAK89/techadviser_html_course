@@ -87,7 +87,7 @@ h1 {
 
 h2 {
   color: #3b7687;
-  font-size: 14px;
+  font-size: 18px;
   margin: 20px 0 5px 0;
   padding: 10px 0;
 }
@@ -163,6 +163,7 @@ footer a:hover {
   text-align: left;
   cursor: pointer;
   outline: none;
+  box-sizing: border-box;
 }
 
 /* On mouse-over */
